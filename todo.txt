@@ -1,0 +1,5 @@
+anime.js to animate the clock
+
+
+Instead of running a fetch call every second, instead, call it once every several minutes
+and run a continual spin transformation in the interim

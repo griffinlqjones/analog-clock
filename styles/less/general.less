@@ -1,0 +1,40 @@
+// main: ./index.less
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: orange;
+  height: 100%;
+  width: 100%;
+  padding: 0% 10%;
+  margin: 0;
+}
+
+@clock-size: 600px;
+@clock-case-width: @clock-size + 300px;
+
+.clock-case {
+  display: grid;
+  grid-template-areas: "analog digital";
+  grid-template-rows: @clock-size;
+  grid-template-columns: @clock-size 1fr;
+  position: relative;
+  background-color: #47361d;
+  width: @clock-case-width;
+  border: 5px solid black;
+  padding: 5%;
+}
+
+.clock-wrapper {
+  grid-area: analog;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: @clock-size;
+  height: @clock-size;
+  background-color: #574325;
+  box-shadow: inset 1px 5px 15px #120f08;
+}
